@@ -8,7 +8,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
     width: 100vw;
 }
@@ -17,22 +17,24 @@ body {
 .section-first {
     background-image: url(../../assets/img/landingpage/FirstSection.jpg);
     background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
 }
 
 .section-first-topBarNavigation {
+    align-items: center;
     background-color: #040404;
     display: flex;
-    justify-content: center;
-    height: 1.5rem;
+    justify-content: flex-start;
+    height: 2rem;
 }
 
 .section-first-topBarNavigation a {
     border-bottom: 1px solid transparent;
     color: #ffffff;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-decoration: none;
 }
 
@@ -42,10 +44,7 @@ body {
 }
 
 .section-first-container {
-    align-items: center;
-    display: flex;
     height: 100%;
-    justify-content: center;
     width: 100%;
 }
 
@@ -63,28 +62,51 @@ body {
     background-color: var(--color-secondary);
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    height: 90vh;
+    height: 70vh;
     width: 100vw;
 }
 
 .section-about-container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 .section-about-header {
-    align-items: center;
-    border-bottom: 0.25rem solid var(--color-primary);
-    font-size: 3rem;
+    /* align-items: center; */
+    /* border-bottom: 0.15rem solid var(--color-primary); */
     color: var(--color-primary);
+    font-size: 3rem;
+    font-weight: 600;
     padding-top: 2rem;
+    position: relative;
     text-align: center;
 }
 
-.section-about-textBody {
-    font-size: 0.8rem;
+.section-about-header:before {
+    margin-right: 1rem;   
+    right: 100%;
+}
+
+.section-about-header:after {
+    left: 100%;
+    margin-left: 1rem;
+}
+
+.section-about-body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 25vw;
+    padding-top: 15vh;
     text-align: center;
+    width: 50vw;
+}
+
+.section-about-body p {
+    border-top: 0.15rem solid var(--color-primary);
+    border-bottom: 0.15rem solid var(--color-primary);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* Benefits Section */
