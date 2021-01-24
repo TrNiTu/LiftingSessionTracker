@@ -59,7 +59,7 @@ body {
 
 /* About Section */
 .section-about {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     height: 70vh;
@@ -71,29 +71,27 @@ body {
     width: 100%;
 }
 
-.section-about-header {
+.about-header {
+    color: var(--color-secondary);
+}
+
+.benefits-header {
+    color: var(--color-primary);
+}
+
+.section-header {
     /* align-items: center; */
     /* border-bottom: 0.15rem solid var(--color-primary); */
-    color: var(--color-primary);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
-    padding-top: 2rem;
+    padding-top: 4rem;
     position: relative;
     text-align: center;
 }
 
-.section-about-header:before {
-    margin-right: 1rem;   
-    right: 100%;
-}
-
-.section-about-header:after {
-    left: 100%;
-    margin-left: 1rem;
-}
-
 .section-about-body {
     align-items: center;
+    color: var(--color-secondary);
     display: flex;
     justify-content: center;
     padding-left: 25vw;
@@ -103,23 +101,41 @@ body {
 }
 
 .section-about-body p {
-    border-top: 0.15rem solid var(--color-primary);
-    border-bottom: 0.15rem solid var(--color-primary);
+    border-top: 0.15rem solid var(--color-secondaryDark);
+    border-bottom: 0.15rem solid var(--color-secondaryDark);
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 /* Benefits Section */
 .section-benefits {
-    background-color: var(--color-primary);
-    height: 90vh;
+    background-color: var(--color-secondary);
+    height: 80vh;
     width: 100vw;
 }
 
+.section-benefits-container {
+    height: 100%;
+    width: 100%;
+}
+
+
+.section-benefits-wrapper {
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.section-benefits-wrapper img {
+    height: 10vw;
+    justify-content: center;
+    width: 10vw;
+}
 
 /* Get Started Section */
 .section-getStarted {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     height: 90vh;
     width: 100vw;
 }
