@@ -1,0 +1,62 @@
+body {
+    --color-primary: #202020;
+    --color-accent: #ffffff;
+    --color-secondary: #ff0000;
+    background-color: var(--color-primary);
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    /* z-index: -1; */
+    /* position: fixed; */
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: 'column';
+    align-items: flex-end;
+    justify-content: 'flex-end';
+}
+
+.slider-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 80px;
+}
+
+.slider-checkbox input {
+    height: 0;                                                      
+    opacity: 0;
+    width: 0;
+}
+
+.login, .about, .contact {
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    letter-spacing: 0.5em;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+.login .letter, .about .letter, .contact .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.login:hover, .about:hover, .contact:hover {
+    cursor: pointer;
+    /* font-size: 32px; */
+    transition: 0.25s;
+    color: var(--color-secondary);
+}

@@ -7,56 +7,26 @@
     <link href="assets/img/favicon.png" rel="shortcut icon" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles/landingpageStyles.css">
-
-    <title>Lifting Sessions Tracker | Get Started</title>
+    <link rel="stylesheet" href="src/styles/desktopStyles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <title>Lifting Tracker</title>
 </head>
 
 <body>
 
+    <!-- <div class="slider-container">
+        <input type="checkbox" class="slider-checkbox">
+        <span class="themeSwitch"></span>
+    </div> -->
 
-    <!-- Initial Section -->
-    <section class="section-first" id="section-first">
-        <div class="section-first-topBarNavigation">
-            <a href="#section-about">ABOUT</a>
-            <a href="#section-benefits">BENEFITS</a>
-            <a href="#section-getStarted">GET STARTED</a>
-        </div>
-        <div class="section-first-container">
-            <div class="section-first-header">
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="section-about" id="section-about">
-        <div class="section-about-container">
-            <div class="about-header section-header">About This Program</div>
-            <div class="section-about-body">
-                <p>Lifting Session Tracker is a program that users will be able to use to record their workouts.
-                    Starting a new "lifting session" will grant users access to adding exercises to each one with
-                    the date automatically labeled. Exercises will have input options of a name, sets, reps
-                    (repetitions), weight, and an optional note. This will help users keep track of their weight lifting
-                    journey while also showing progression!</p>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+        <a class="login" onclick=onClickLogin()>Login</a>
 
-    <section class="section-benefits" id="section-benefits">
-        <div class="section-benefits-container">
-            <div class="benefits-header section-header">Benefits of Usage</div>
-                <div class="section-benefits-wrapper">
-                        <img src="assets/img/landingpage/Benefit1.png"/>
-                        <img src="assets/img/landingpage/Benefit1.png"/>
-                        <img src="assets/img/landingpage/Benefit1.png"/>
-                </div>
-        </div>
-    </section>
-
-    <!-- Get Started Section -->
-    <section class="section-getStarted" id="section-getStarted">
-
-    </section>
+        <a class="about" onclick=onClickAbout(a)>About</a>
+        <a class="contact" onclick=onClickContact(c)>Contact</a>
+    </div>
+    <script src="src/textAnim.js"></script>
 </body>
 
 </html>
