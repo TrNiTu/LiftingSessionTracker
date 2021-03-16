@@ -1,2 +1,0 @@
-# LiftingSessionTracker
-Lifting Session Tracker

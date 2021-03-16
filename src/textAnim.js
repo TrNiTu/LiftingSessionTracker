@@ -21,19 +21,18 @@ anime.timeline().add({
     delay: (el, i) => 500 + 30 * i
 });
 
-onClickLogin = () => {
-
+function onClickLogin() {
     anime.timeline().add({
-        targets: '.about .letter, .contact .letter',
+        targets: '.login .letter, .about .letter, .contact .letter',
         translateX: [0, -30],
         opacity: [1, 0],
         easing: 'easeInExpo',
         duration: 800,
         delay: (el, i) => 100 + 30 * i,
-        complete: function (anime) {
+        complete: function () {
+            loginTextWrapper.remove();
             aboutTextWrapper.remove();
             contactTextWrapper.remove();
-            animateLogin();
         }
     });
 }

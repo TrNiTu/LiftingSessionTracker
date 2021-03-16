@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles/desktopStyles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="src/firebase.js"></script>
+
     <title>Lifting Tracker</title>
 </head>
 
@@ -22,10 +27,15 @@
 
     <div class="container">
         <a class="login" onclick=onClickLogin()>Login</a>
+        <a class="about" onclick=onClickLogin()>About</a>
+        <a class="contact" onclick=onClickLogin()>Contact</a>
+        <button type='submit' onclick=userSignIn()>Sign In</button>
+        <button type='submit' onclick=userSignUp()>Sign Up</button>
+        <button type='submit' onclick=userSignOut()>Sign Out</button>
 
-        <a class="about" onclick=onClickAbout(a)>About</a>
-        <a class="contact" onclick=onClickContact(c)>Contact</a>
+        <!-- <a class="back" onclick=onClickBack()>Back</a> -->
     </div>
+
     <script src="src/textAnim.js"></script>
 </body>
 
