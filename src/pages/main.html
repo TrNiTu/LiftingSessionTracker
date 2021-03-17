@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/desktopStyles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="../js/firebase.js"></script>
+
+    <title>Lifting Tracker</title>
+</head>
+
+<body>
+
+    <!-- <div class="slider-container">
+        <input type="checkbox" class="slider-checkbox">
+        <span class="themeSwitch"></span>
+    </div> -->
+
+
+    <div class="container">
+            <input type='text' placeholder='name' required id='name'/>
+            <input type='text' placeholder='weight' required id='weight' />
+            <input type='text' placeholder='sets' required id='sets' />
+            <input type='text' placeholder='reps' required id='reps' />
+            <input type='text' placeholder='rpe' id='rpe' />
+            <input type='text' placeholder='desc' id='desc' />
+            <button type='submit' onclick=newExercise()>Create New Exercise</button>
+        <!-- <a class="back" onclick=onClickBack()>Back</a> -->
+    </div>
+
+</body>
+
+</html>

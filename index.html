@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/img/favicon.png" rel="shortcut icon" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles/desktopStyles.css">
@@ -12,7 +11,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
-    <script src="src/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="src/js/firebase.js"></script>
+    <script src="src/js/loginModal.js"></script>
 
     <title>Lifting Tracker</title>
 </head>
@@ -32,11 +33,17 @@
         <button type='submit' onclick=userSignIn()>Sign In</button>
         <button type='submit' onclick=userSignUp()>Sign Up</button>
         <button type='submit' onclick=userSignOut()>Sign Out</button>
-
+       <button type='submit'  onclick=newSession()>New Session</button>
+        <input type='text' placeholder='name' required id='name'/>
+        <input type='text' placeholder='weight' required id='weight' />
+        <input type='text' placeholder='sets' required id='sets' />
+        <input type='text' placeholder='reps' required id='reps' />
+        <input type='text' placeholder='rpe' id='rpe' />
+        <input type='text' placeholder='desc' id='desc' />
+        <button type='submit' onclick=newExercise()>Create New Exercise</button>
         <!-- <a class="back" onclick=onClickBack()>Back</a> -->
     </div>
 
-    <script src="src/textAnim.js"></script>
 </body>
 
 </html>
